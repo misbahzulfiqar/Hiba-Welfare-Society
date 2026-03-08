@@ -26,10 +26,10 @@ const stats = [
 
 export function ImpactSection() {
   return (
-    <section className="bg-primary py-16 md:py-24">
+    <section className="bg-primary py-12 sm:py-16 md:py-24">
       <div className="container">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-white md:text-4xl">
+          <h2 className="text-2xl font-bold text-white sm:text-3xl md:text-4xl">
             Our Impact In Numbers
           </h2>
           <p className="mt-3 text-white/90">
@@ -38,18 +38,21 @@ export function ImpactSection() {
         </div>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 mb-12">
-          {stats.map((stat) => (
+          {stats.map((stat) => {
+            const Icon = stat.icon
+            return (
             <div
               key={stat.label}
-              className="rounded-xl bg-[hsl(142,40%,88%)] p-6 text-center"
+              className="rounded-xl bg-[hsl(142,40%,88%)] p-4 text-center sm:p-6"
             >
-              <stat.icon className="mx-auto h-10 w-10 text-primary" strokeWidth={1.5} />
-              <p className="mt-4 text-3xl font-bold text-primary md:text-4xl">
+              <Icon className="mx-auto h-10 w-10 text-primary" strokeWidth={1.5} />
+              <p className="mt-4 text-2xl font-bold text-primary sm:text-3xl md:text-4xl">
                 {stat.value}
               </p>
               <p className="mt-2 text-sm text-primary/90">{stat.label}</p>
             </div>
-          ))}
+            )
+          })}
         </div>
 
         <div className="text-center">

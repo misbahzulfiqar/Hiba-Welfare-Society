@@ -31,8 +31,8 @@ const socialLinks = [
 export function Footer() {
   return (
     <footer className="bg-[#1e3a5f] text-white">
-      <div className="container py-12 md:py-16">
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="container px-4 py-10 sm:py-12 md:py-16">
+        <div className="grid gap-8 sm:gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
           {/* Column 1: Logo, description, social */}
           <div className="space-y-4">
             <a href="/" className="flex items-center gap-2 font-semibold text-xl">
@@ -90,12 +90,12 @@ export function Footer() {
             <h3 className="font-semibold text-white">Contact us</h3>
             <ul className="mt-4 space-y-4 text-sm text-white/90">
               <li className="flex gap-3">
-                <MapPin className="h-5 w-5 shrink-0 text-primary" />
-                <span>A-25, Bahadurabad Chowrangi Karachi, Pakistan</span>
+                <MapPin className="h-5 w-5 shrink-0 text-primary mt-0.5" />
+                <span className="break-words">A-25, Bahadurabad Chowrangi Karachi, Pakistan</span>
               </li>
               <li className="flex gap-3">
-                <Mail className="h-5 w-5 shrink-0 text-primary" />
-                <a href="mailto:hibawelfaresociety@gmail.com" className="hover:text-white">
+                <Mail className="h-5 w-5 shrink-0 text-primary mt-0.5" />
+                <a href="mailto:hibawelfaresociety@gmail.com" className="hover:text-white break-all">
                   hibawelfaresociety@gmail.com
                 </a>
               </li>

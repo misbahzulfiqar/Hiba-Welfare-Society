@@ -26,13 +26,13 @@ const updates = [
 
 export function MediaUpdates() {
   return (
-    <section className="border-t bg-muted/30 py-16 md:py-20">
+    <section className="border-t bg-muted/30 py-12 sm:py-16 md:py-20">
       <div className="container">
         <div className="text-center mb-12">
           <p className="text-sm font-semibold uppercase tracking-wide text-primary">
             Latest Update
           </p>
-          <h2 className="mt-2 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+          <h2 className="mt-2 text-2xl font-bold tracking-tight text-foreground sm:text-3xl md:text-4xl">
             Media <span className="text-primary">Updates</span>
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">

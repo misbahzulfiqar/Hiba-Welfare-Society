@@ -38,10 +38,10 @@ const initiatives = [
 
 export function WhatWeAreDoing() {
   return (
-    <section className="border-t bg-white py-16 md:py-20">
+    <section className="border-t bg-white py-12 sm:py-16 md:py-20">
       <div className="container">
         <div className="mb-10">
-          <h2 className="text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+          <h2 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl md:text-4xl">
             What We Are <span className="text-primary">Doing</span>
           </h2>
         </div>

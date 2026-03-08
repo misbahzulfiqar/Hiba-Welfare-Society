@@ -36,13 +36,13 @@ const blogs = [
 
 export function OurBlogs() {
   return (
-    <section className="border-t bg-white py-16 md:py-20">
+    <section className="border-t bg-white py-12 sm:py-16 md:py-20">
       <div className="container">
         <div className="text-center mb-12">
           <p className="text-sm font-semibold uppercase tracking-wide text-primary">
             Latest Blogs
           </p>
-          <h2 className="mt-2 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+          <h2 className="mt-2 text-2xl font-bold tracking-tight text-foreground sm:text-3xl md:text-4xl">
             Our <span className="text-primary">Blogs</span>
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">

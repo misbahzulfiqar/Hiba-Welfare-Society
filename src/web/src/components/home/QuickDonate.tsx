@@ -25,11 +25,11 @@ const donationOptions = [
 
 export function QuickDonate() {
   return (
-    <section className="border-t bg-white py-16 md:py-20">
+    <section className="border-t bg-white py-12 sm:py-16 md:py-20">
       <div className="container">
         {/* Header */}
         <div className="text-center mb-10">
-          <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
+          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl">
             Quick <span className="text-primary">Donate</span>
           </h2>
           <p className="mt-2 text-muted-foreground">
@@ -60,9 +60,9 @@ export function QuickDonate() {
         </div>
 
         {/* Two Donation Cards */}
-        <div className="grid gap-6 lg:grid-cols-2 max-w-5xl mx-auto">
+        <div className="grid gap-4 sm:gap-6 lg:grid-cols-2 max-w-5xl mx-auto">
           {/* Left Card - Ramzan Donation */}
-          <div className="group relative overflow-hidden rounded-2xl bg-muted min-h-[420px]">
+          <div className="group relative overflow-hidden rounded-2xl bg-muted min-h-[320px] sm:min-h-[380px] md:min-h-[420px]">
             <img
               src="https://images.unsplash.com/photo-1606046604972-77cc76aee944?w=400&q=80"
               alt="Ramzan Donations"
@@ -72,19 +72,19 @@ export function QuickDonate() {
             <span className="absolute top-4 right-4 rounded bg-primary px-2.5 py-1 text-xs font-semibold text-primary-foreground">
               RAMZAN
             </span>
-            <div className="relative flex h-full flex-col p-6 pt-12">
+            <div className="relative flex h-full flex-col p-4 pt-10 sm:p-6 sm:pt-12">
               <div className="flex flex-1 flex-col lg:flex-row lg:items-end lg:gap-4">
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-white md:text-3xl">
+                  <h3 className="text-xl font-bold text-white sm:text-2xl md:text-3xl">
                     Ramzan Donation
                   </h3>
-                  <p className="mt-2 max-w-sm text-sm text-white/90">
+                  <p className="mt-2 max-w-sm text-xs sm:text-sm text-white/90">
                     Make your Ramzan Donation 2026 a source of mercy and reward.
                   </p>
                 </div>
-                <div className="mt-4 rounded-lg bg-black/40 p-3 text-white backdrop-blur-sm lg:mt-0 lg:min-w-[200px]">
+                <div className="mt-4 rounded-lg bg-black/40 p-2.5 sm:p-3 text-white backdrop-blur-sm lg:mt-0 lg:min-w-[200px]">
                   <p className="text-xs font-medium text-white/80">Zakat, Sehri and Iftari, Ration</p>
-                  <div className="mt-2 space-y-0.5 text-xs">
+                  <div className="mt-1.5 sm:mt-2 space-y-0.5 text-[10px] sm:text-xs overflow-x-auto">
                     {donationOptions.map((opt) => (
                       <div key={opt.amount}>
                         {opt.amount}{opt.value ? ` → ${opt.value}` : ""}
@@ -106,7 +106,7 @@ export function QuickDonate() {
           </div>
 
           {/* Right Card - Fitra, Fidya & Kaffara */}
-          <div className="group relative overflow-hidden rounded-2xl bg-muted min-h-[420px]">
+          <div className="group relative overflow-hidden rounded-2xl bg-muted min-h-[320px] sm:min-h-[380px] md:min-h-[420px]">
             <img
               src="https://images.unsplash.com/photo-1606046604972-77cc76aee944?w=600&q=80"
               alt="Fitra, Fidya & Kaffara"
@@ -116,11 +116,11 @@ export function QuickDonate() {
             <span className="absolute top-4 right-4 rounded bg-primary px-2.5 py-1 text-xs font-semibold text-primary-foreground">
               RAMZAN
             </span>
-            <div className="relative flex h-full flex-col p-6 pt-12">
-              <h3 className="text-2xl font-bold text-white md:text-3xl">
+            <div className="relative flex h-full flex-col p-4 pt-10 sm:p-6 sm:pt-12">
+              <h3 className="text-xl font-bold text-white sm:text-2xl md:text-3xl">
                 Your&apos;s Fitra, Fidya & Kaffara
               </h3>
-              <p className="mt-2 max-w-sm text-sm text-white/90">
+              <p className="mt-2 max-w-sm text-xs sm:text-sm text-white/90">
                 Fulfill your religious obligations through Fitra, Fidya, and Kaffara.
               </p>
               <div className="mt-auto flex justify-end pt-6">

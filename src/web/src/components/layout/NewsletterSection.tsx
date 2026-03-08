@@ -4,10 +4,10 @@ import { Button } from "@/components/ui/button"
 
 export function NewsletterSection() {
   return (
-    <section className="bg-primary py-16 md:py-20">
+    <section className="bg-primary py-12 sm:py-16 md:py-20">
       <div className="container">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold text-primary-foreground md:text-4xl">
+          <h2 className="text-2xl font-bold text-primary-foreground sm:text-3xl md:text-4xl">
             Subscribe Our Newsletter
           </h2>
           <p className="mt-4 text-primary-foreground/90">

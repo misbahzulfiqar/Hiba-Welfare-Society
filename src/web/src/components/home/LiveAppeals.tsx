@@ -39,13 +39,13 @@ const initiatives = [
 
 export function LiveAppeals() {
   return (
-    <section className="border-t bg-muted/30 py-16 md:py-24">
+    <section className="border-t bg-muted/30 py-12 sm:py-16 md:py-24">
       <div className="container">
         <div className="mb-12 max-w-2xl">
           <p className="text-sm font-semibold uppercase tracking-wide text-primary">
             Our Initiatives
           </p>
-          <h2 className="mt-2 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+          <h2 className="mt-2 text-2xl font-bold tracking-tight text-foreground sm:text-3xl md:text-4xl">
             Live <span className="text-primary">Appeals</span>
           </h2>
           <p className="mt-4 text-muted-foreground">

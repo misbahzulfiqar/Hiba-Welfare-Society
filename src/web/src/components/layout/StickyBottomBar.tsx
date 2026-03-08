@@ -14,16 +14,16 @@ export function StickyBottomBar() {
 
   return (
     <div
-      className="fixed bottom-0 left-0 right-0 z-50 flex items-center justify-between bg-[#2563eb] px-4 py-3 shadow-lg"
+      className="fixed bottom-0 left-0 right-0 z-50 flex items-center bg-[#2563eb] px-3 py-2.5 shadow-lg sm:px-4 sm:py-3"
       style={{ bottom: 0 }}
     >
-      <div className="container flex items-center justify-between">
-        <nav className="flex items-center gap-6 md:gap-10">
+      <div className="flex w-full items-center justify-between gap-2 overflow-hidden">
+        <nav className="flex min-w-0 flex-1 items-center gap-3 overflow-x-auto py-1 md:gap-10">
           {quickLinks.map(({ label, href }) => (
             <a
               key={href}
               href={href}
-              className="text-sm font-semibold text-white hover:underline md:text-base"
+              className="shrink-0 text-xs font-semibold text-white hover:underline sm:text-sm md:text-base"
             >
               {label}
             </a>
@@ -33,7 +33,7 @@ export function StickyBottomBar() {
           variant="ghost"
           size="icon"
           onClick={scrollToTop}
-          className="shrink-0 rounded-full text-white hover:bg-white/20 hover:text-white"
+          className="h-8 w-8 shrink-0 rounded-full text-white hover:bg-white/20 hover:text-white sm:h-10 sm:w-10"
           aria-label="Scroll to top"
         >
           <ArrowUpToLine className="h-5 w-5" />

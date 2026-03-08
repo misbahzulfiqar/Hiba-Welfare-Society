@@ -16,7 +16,7 @@ import { StickyBottomBar } from "@/components/layout/StickyBottomBar"
 
 function App() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen overflow-x-hidden bg-background">
       <Toaster />
       <TopBar />
       <MainNav />

@@ -43,13 +43,13 @@ function Stars({ rating }: { rating: number }) {
 
 export function Testimonials() {
   return (
-    <section className="border-t bg-muted/30 py-16 md:py-24">
+    <section className="border-t bg-muted/30 py-12 sm:py-16 md:py-24">
       <div className="container">
         <div className="text-center mb-12">
           <span className="inline-block rounded-full bg-primary px-4 py-1.5 text-sm font-medium text-primary-foreground">
             Our Testimonials
           </span>
-          <h2 className="mt-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+          <h2 className="mt-4 text-2xl font-bold tracking-tight text-foreground sm:text-3xl md:text-4xl">
             What We Are <span className="text-primary underline decoration-2 underline-offset-2">Say?</span>
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
@@ -65,7 +65,7 @@ export function Testimonials() {
               className="overflow-hidden bg-card shadow-md"
             >
               <CardContent className="p-6">
-                <div className="flex gap-5">
+                <div className="flex flex-col gap-5 sm:flex-row">
                   <div className="flex shrink-0 flex-col items-center">
                     <Avatar className="h-16 w-16">
                       <AvatarImage src={t.avatar} alt={t.name} />
