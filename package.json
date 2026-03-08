@@ -1,0 +1,22 @@
+{
+  "name": "hiba-welfare",
+  "private": true,
+  "workspaces": [
+    "src/admin",
+    "src/api",
+    "src/web"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspaces --if-present",
+    "dev:admin": "npm run dev -w admin",
+    "dev:api": "npm run dev -w api",
+    "dev:web": "npm run dev -w web",
+    "build": "npm run build --workspaces --if-present",
+    "build:admin": "npm run build -w admin",
+    "build:api": "npm run build -w api",
+    "build:web": "npm run build -w web"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  }
+}
