@@ -15,7 +15,7 @@ export function MainNav() {
     <header className="sticky top-0 z-50 w-full border-b bg-white">
       <div className="container flex h-24 items-center justify-between">
         <a href="/" className="flex items-center gap-2 font-semibold text-2xl text-foreground">
-          <Logo size={80} className="h-20 w-20" />
+          <Logo className="h-20 w-20" />
           Hiba Welfare
         </a>
         <nav className="flex items-center gap-8">

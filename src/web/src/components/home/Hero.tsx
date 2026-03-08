@@ -9,7 +9,7 @@ export function Hero() {
       <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
         <div className="space-y-8">
           <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary">
-            <Logo size={32} className="h-8 w-8" />
+            <Logo className="h-8 w-8" />
             Pakistan&apos;s Largest Welfare NGO
           </div>
           <div className="space-y-4">

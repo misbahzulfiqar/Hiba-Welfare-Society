@@ -36,7 +36,7 @@ export function Footer() {
           {/* Column 1: Logo, description, social */}
           <div className="space-y-4">
             <a href="/" className="flex items-center gap-2 font-semibold text-xl">
-              <Logo size={64} className="h-16 w-16" />
+              <Logo className="h-16 w-16" />
               Hiba Welfare
             </a>
             <p className="text-sm text-white/90 leading-relaxed">
