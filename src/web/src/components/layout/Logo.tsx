@@ -5,13 +5,13 @@ interface LogoProps {
   size?: number
 }
 
-export function Logo({ className, size = 52 }: LogoProps) {
+export function Logo({ className, size = 32 }: LogoProps) {
   return (
     <img
       src="/images/LOGO.png"
       alt="Hiba Welfare Society"
-      width="100%"
-      height="100%"
+      width={size}
+      height={size}
       className={cn("object-contain", className)}
     />
   )
