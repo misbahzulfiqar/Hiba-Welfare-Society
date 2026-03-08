@@ -65,7 +65,7 @@ export function QuickDonate() {
           <div className="group relative overflow-hidden rounded-2xl bg-muted min-h-[420px]">
             <img
               src="https://images.unsplash.com/photo-1606046604972-77cc76aee944?w=400&q=80"
-              alt="Ramzan Donation"
+              alt="Ramzan Donations"
               className="absolute inset-0 h-full w-full object-cover opacity-90"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent" />
