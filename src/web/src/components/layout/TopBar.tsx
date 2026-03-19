@@ -58,7 +58,7 @@ export function TopBar() {
           </button>
           <Button
             size="sm"
-            className="bg-[hsl(217,91%,50%)] hover:bg-[hsl(217,91%,45%)] text-white border-0 text-xs sm:text-sm px-2 sm:px-3"
+            className="bg-[hsl(214.5,40%,88%)] hover:bg-[hsl(214.5,40%,82%)] text-blue-deep border-0 text-xs sm:text-sm px-2 sm:px-3"
             asChild
           >
             <a href="#ramzan">

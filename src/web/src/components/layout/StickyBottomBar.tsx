@@ -14,7 +14,7 @@ export function StickyBottomBar() {
 
   return (
     <div
-      className="fixed bottom-0 left-0 right-0 z-50 flex items-center bg-[#2563eb] px-3 py-2.5 shadow-lg sm:px-4 sm:py-3"
+      className="fixed bottom-0 left-0 right-0 z-50 flex items-center rounded-t-lg border-t border-blue-deep/20 bg-[hsl(214.5,40%,88%)] px-3 py-1.5 text-blue-deep shadow-lg sm:px-4 sm:py-2"
       style={{ bottom: 0 }}
     >
       <div className="flex w-full items-center justify-between gap-2 overflow-hidden">
@@ -23,7 +23,7 @@ export function StickyBottomBar() {
             <a
               key={href}
               href={href}
-              className="shrink-0 text-xs font-semibold text-white hover:underline sm:text-sm md:text-base"
+              className="shrink-0 text-xs font-semibold text-blue-deep hover:underline sm:text-sm md:text-base"
             >
               {label}
             </a>
@@ -33,10 +33,10 @@ export function StickyBottomBar() {
           variant="ghost"
           size="icon"
           onClick={scrollToTop}
-          className="h-8 w-8 shrink-0 rounded-full text-white hover:bg-white/20 hover:text-white sm:h-10 sm:w-10"
+          className="h-7 w-7 shrink-0 rounded-full text-blue-deep hover:bg-blue-deep/10 hover:text-blue-deep sm:h-8 sm:w-8"
           aria-label="Scroll to top"
         >
-          <ArrowUpToLine className="h-5 w-5" />
+          <ArrowUpToLine className="h-4 w-4" />
         </Button>
       </div>
     </div>

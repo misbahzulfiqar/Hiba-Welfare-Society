@@ -56,6 +56,8 @@ export default {
           green: "hsl(var(--welfare-green))",
           blue: "hsl(var(--welfare-blue))",
         },
+        "blu-deep": "#1455ad",
+        "blue-deep": "#1455ad",
       },
       borderRadius: {
         lg: "var(--radius)",

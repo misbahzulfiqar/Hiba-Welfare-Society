@@ -13,6 +13,7 @@ import { LatestNews } from "@/components/home/LatestNews"
 import { NewsletterSection } from "@/components/layout/NewsletterSection"
 import { Footer } from "@/components/layout/Footer"
 import { StickyBottomBar } from "@/components/layout/StickyBottomBar"
+import { WhatsAppChatButton } from "@/components/layout/WhatsAppChatButton"
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <NewsletterSection />
         <Footer />
       </main>
+      <WhatsAppChatButton />
       <StickyBottomBar />
     </div>
   )
