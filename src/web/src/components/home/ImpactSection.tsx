@@ -43,7 +43,7 @@ export function ImpactSection() {
             return (
             <div
               key={stat.label}
-              className="rounded-xl bg-[hsl(214.5,40%,88%)] p-4 text-center sm:p-6"
+              className="rounded-xl bg-[hsl(120,35%,88%)] p-4 text-center sm:p-6"
             >
               <Icon className="mx-auto h-10 w-10 text-primary" strokeWidth={1.5} />
               <p className="mt-4 text-2xl font-bold text-primary sm:text-3xl md:text-4xl">
@@ -61,7 +61,7 @@ export function ImpactSection() {
           </p>
           <Button
             size="lg"
-            className="mt-6 rounded-full bg-[hsl(214.5,40%,88%)] text-primary hover:bg-[hsl(214.5,40%,82%)] border-0"
+            className="mt-6 rounded-full bg-[hsl(120,35%,88%)] text-primary hover:bg-[hsl(120,35%,82%)] border-0"
             asChild
           >
             <a href="#join">

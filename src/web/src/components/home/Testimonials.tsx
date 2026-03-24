@@ -3,7 +3,16 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { cn } from "@/lib/utils"
 
-const testimonials = [
+type Testimonial = {
+  name: string
+  title: string
+  rating: number
+  quote: string
+  time: string
+  avatar: string
+}
+
+const testimonials: Testimonial[] = [
   {
     name: "Arshad Wali Muhammad",
     title: "Group Director, Meny's Group",
@@ -44,7 +53,7 @@ function Stars({ rating }: { rating: number }) {
 export function Testimonials() {
   return (
     <section className="border-t bg-muted/30 py-12 sm:py-16 md:py-24">
-      <div className="container">
+      <div className="w-[90%] mx-auto">
         <div className="text-center mb-12">
           <span className="inline-block rounded-full bg-primary px-4 py-1.5 text-sm font-medium text-primary-foreground">
             Our Testimonials

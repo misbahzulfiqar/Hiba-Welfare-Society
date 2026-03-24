@@ -2,14 +2,25 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { cn } from "@/lib/utils"
 
-const tabs = [
+type DoingTab = {
+  id: string
+  label: string
+  active: boolean
+}
+
+type InitiativeCard = {
+  image: string
+  label: string
+}
+
+const tabs: DoingTab[] = [
   { id: "all", label: "All", active: true },
   { id: "medical", label: "Medical", active: false },
   { id: "welfare", label: "Welfare", active: false },
   { id: "education", label: "Education", active: false },
 ]
 
-const initiatives = [
+const initiatives: InitiativeCard[] = [
   {
     image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=400&q=80",
     label: "Medical",
@@ -39,7 +50,7 @@ const initiatives = [
 export function WhatWeAreDoing() {
   return (
     <section className="border-t bg-white py-12 sm:py-16 md:py-20">
-      <div className="container">
+      <div className="w-[90%] mx-auto">
         <div className="mb-10">
           <h2 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl md:text-4xl">
             What We Are <span className="text-primary">Doing</span>

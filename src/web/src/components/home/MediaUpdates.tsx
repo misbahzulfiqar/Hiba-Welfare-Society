@@ -3,7 +3,14 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 
-const updates = [
+type MediaUpdateItem = {
+  image: string
+  date: string
+  title: string
+  excerpt: string
+}
+
+const updates: MediaUpdateItem[] = [
   {
     image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=400&q=80",
     date: "19/1/2025",
@@ -27,7 +34,7 @@ const updates = [
 export function MediaUpdates() {
   return (
     <section className="border-t bg-muted/30 py-12 sm:py-16 md:py-20">
-      <div className="container">
+      <div className="w-[90%] mx-auto">
         <div className="text-center mb-12">
           <p className="text-sm font-semibold uppercase tracking-wide text-primary">
             Latest Update

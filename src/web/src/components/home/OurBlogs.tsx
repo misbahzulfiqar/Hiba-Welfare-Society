@@ -3,7 +3,14 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 
-const blogs = [
+type BlogPost = {
+  image: string
+  date: string
+  title: string
+  excerpt: string
+}
+
+const blogs: BlogPost[] = [
   {
     image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&q=80",
     date: "6/3/2026",
@@ -37,7 +44,7 @@ const blogs = [
 export function OurBlogs() {
   return (
     <section className="border-t bg-white py-12 sm:py-16 md:py-20">
-      <div className="container">
+      <div className="w-[90%] mx-auto">
         <div className="text-center mb-12">
           <p className="text-sm font-semibold uppercase tracking-wide text-primary">
             Latest Blogs

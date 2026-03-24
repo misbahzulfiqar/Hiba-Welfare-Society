@@ -2,7 +2,18 @@ import { ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 
-const tabs = [
+type QuickDonateTab = {
+  id: string
+  label: string
+  active: boolean
+}
+
+type DonationOption = {
+  amount: string
+  value: string
+}
+
+const tabs: QuickDonateTab[] = [
   { id: "ramzan", label: "Ramsan Donation", active: true },
   { id: "general", label: "General", active: false },
   { id: "daily-food", label: "Daily Food", active: false },
@@ -11,7 +22,7 @@ const tabs = [
   { id: "education", label: "Education", active: false },
 ]
 
-const donationOptions = [
+const donationOptions: DonationOption[] = [
   { amount: "PKR 300", value: "7,000" },
   { amount: "USD $1", value: "$26" },
   { amount: "CAD $1.5", value: "$37" },
@@ -26,7 +37,7 @@ const donationOptions = [
 export function QuickDonate() {
   return (
     <section className="border-t bg-white py-12 sm:py-16 md:py-20">
-      <div className="container">
+      <div className="w-[90%] mx-auto">
         {/* Header */}
         <div className="text-center mb-10">
           <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl">

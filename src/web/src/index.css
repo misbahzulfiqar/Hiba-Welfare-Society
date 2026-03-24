@@ -10,7 +10,7 @@
     --card-foreground: 222.2 84% 4.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
-    --primary: 214.5 79.3% 37.8%;
+    --primary: 106 67% 42%;
     --primary-foreground: 0 0% 100%;
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
@@ -24,8 +24,8 @@
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
     --radius: 0.5rem;
-    --welfare-green: 214.5 79.3% 37.8%;
-    --welfare-blue: 217 91% 50%;
+    --welfare-green: 106 67% 42%;
+    --welfare-blue: 106 67% 42%;
   }
 
   .dark {
@@ -58,4 +58,32 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@keyframes float-soft {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float-slow {
+  animation: float-soft 3.6s ease-in-out infinite;
+}
+
+.animate-float-medium {
+  animation: float-soft 2.9s ease-in-out infinite;
+}
+
+.animate-float-fast {
+  animation: float-soft 2.2s ease-in-out infinite;
 }

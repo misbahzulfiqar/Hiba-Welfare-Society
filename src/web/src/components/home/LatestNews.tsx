@@ -3,7 +3,14 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 
-const news = [
+type NewsItem = {
+  image: string
+  date: string
+  title: string
+  excerpt: string
+}
+
+const news: NewsItem[] = [
   {
     image: "https://images.unsplash.com/photo-1584515933487-779824d29309?w=400&q=80",
     date: "20/1/2026",
@@ -33,7 +40,7 @@ const news = [
 export function LatestNews() {
   return (
     <section className="border-t bg-white py-12 sm:py-16 md:py-20">
-      <div className="container">
+      <div className="w-[90%] mx-auto">
         <div className="text-center mb-12">
           <p className="text-sm font-semibold uppercase tracking-wide text-primary">
             Latest News

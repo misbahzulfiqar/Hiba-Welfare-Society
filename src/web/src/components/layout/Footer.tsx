@@ -8,7 +8,7 @@ const pages = [
   { label: "Media", href: "/media" },
   { label: "Contact Us", href: "/contact" },
   { label: "Bank Details", href: "/bank-details" },
-  { label: "Donor Login Account", href: "/donor-login" },
+  { label: "Donor Login", href: "/donor-login" },
 ]
 
 const donationCategories = [
@@ -30,7 +30,7 @@ const socialLinks = [
 
 export function Footer() {
   return (
-    <footer className="bg-[#163553] text-white">
+    <footer className="bg-[#1f4d1f] text-white">
       <div className="container px-4 py-10 sm:py-12 md:py-16">
         <div className="grid gap-8 sm:gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
           {/* Column 1: Logo, description, social */}

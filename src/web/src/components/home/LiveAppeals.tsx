@@ -2,7 +2,15 @@ import { ArrowRight } from "lucide-react"
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 
-const initiatives = [
+type LiveAppealItem = {
+  title: string
+  description: string
+  image: string
+  overlay: string
+  link: string
+}
+
+const initiatives: LiveAppealItem[] = [
   {
     title: "Fitra, Fidya and Kaffara",
     description:
@@ -40,7 +48,7 @@ const initiatives = [
 export function LiveAppeals() {
   return (
     <section className="border-t bg-muted/30 py-12 sm:py-16 md:py-24">
-      <div className="container">
+      <div className="w-[90%] mx-auto">
         <div className="mb-12 max-w-2xl">
           <p className="text-sm font-semibold uppercase tracking-wide text-primary">
             Our Initiatives
