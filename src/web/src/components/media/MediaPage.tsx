@@ -1,5 +1,5 @@
 import { Clock, PlayCircle } from "lucide-react"
-import { useEffect, useMemo, useState } from "react"
+import { useEffect, useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 
 type MediaSectionKey = "news" | "videos"
@@ -73,8 +73,6 @@ export function MediaPage() {
 
   const isNews = section === "news"
   const heading = isNews ? "LATEST NEWS" : "MEDIA GALLERY"
-  const items = useMemo(() => (isNews ? latestNewsItems : latestVideoItems), [isNews])
-
   return (
     <section className="bg-[hsl(120,10%,92%)] pb-16">
       <div className="bg-green-deep py-7 text-center">
@@ -84,7 +82,7 @@ export function MediaPage() {
       <div className="w-[95%] mx-auto pt-8">
         {isNews ? (
           <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
-            {items.map((item) => (
+            {latestNewsItems.map((item) => (
               <Card
                 key={item.title}
                 className="overflow-hidden rounded-2xl border border-black/5 bg-white shadow-sm"

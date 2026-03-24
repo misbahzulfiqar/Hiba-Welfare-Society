@@ -1,4 +1,4 @@
-import { Award, Download, Eye, FileBadge, FileText } from "lucide-react"
+import { Award, Eye } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
